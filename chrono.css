@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: thistle;
+}
+body h1 {
+  font-family: Papyrus;
+  color: #8db3b6;
+}
+
+@keyframes sec {
+  0% {
+    left: 403px;
+    top: 95px;
+  }
+  25% {
+    left: 600px;
+    top: 95px;
+    background-color: #86e78e;
+  }
+  50% {
+    left: 600px;
+    top: 165px;
+    background-color: #86e78e;
+  }
+  75% {
+    left: 403px;
+    top: 165px;
+  }
+  100% {
+    left: 403px;
+    top: 95px;
+  }
+}
+@keyframes secl {
+  0% {
+    border-top-color: rgba(87, 228, 238, 0.5);
+  }
+  25% {
+    border-top-color: rgba(87, 228, 238, 0.5);
+  }
+  50% {
+    border-right-color: rgba(87, 228, 238, 0.5);
+  }
+  75% {
+    border-bottom-color: #86e78e;
+  }
+  100% {
+    border-left-color: #86e78e;
+  }
+}
+@keyframes bgan {
+  0% {
+    background-color: #86e78e;
+  }
+  50% {
+    background-color: rgba(10, 37, 39, 0.5);
+  }
+  100% {
+    background-color: rgba(180, 67, 23, 0.733);
+  }
+}
+.deco {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(87, 228, 238, 0.5);
+  border-radius: 10px;
+  left: 403px;
+  top: 20px;
+  animation: sec 1s ease infinite;
+}
+
+.timeSaved {
+  background: #395e5e;
+  color: #da8210;
+  transition: 500ms;
+  width: 150px;
+  height: 42px;
+  overflow: auto;
+  line-height: 12px;
+  padding-left: 30px;
+  padding-bottom: 3px;
+  margin-top: 20px;
+  margin-left: 428px;
+  border: 2px solid rgba(245, 245, 245, 0.3);
+  border-right: none;
+}
+
+.de {
+  border: solid 4px transparent;
+  animation: secl ease 1s infinite;
+  transition: border-color linear 600ms;
+}
+
+.an {
+  animation: bgan ease 1s infinite;
+}
+
+.cont {
+  position: relative;
+  background-color: seashell;
+  transition: background-color linear 600ms;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  margin-left: 400px;
+}
+.cont span {
+  font-weight: bold;
+  font-size: 24px;
+}
+.cont button {
+  border: none;
+  font-family: vani;
+  border-radius: 40%;
+  cursor: pointer;
+}
+.cont .hms {
+  color: #6fb8ce;
+}
+
+button:nth-child(1) {
+  background-color: rgba(134, 231, 142, 0.5);
+}
+button:nth-child(1):hover {
+  background-color: #86e78e;
+  color: red;
+}
+
+button:nth-child(2) {
+  background-color: rgba(79, 221, 221, 0.5);
+}
+button:nth-child(2):hover {
+  background-color: #4fdddd;
+  color: red;
+}
+
+button:nth-child(3) {
+  background-color: rgba(231, 225, 134, 0.5);
+}
+button:nth-child(3):hover {
+  background-color: #e7e186;
+  color: red;
+}
+
+/*# sourceMappingURL=chrono.css.map */
